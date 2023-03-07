@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+ <html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+ <html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+ <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+    <head>
+        
+        <!-- Basic Page Needs
+         ================================================== -->
+        <meta charset="utf-8"/>
+        <title>ALIAS 2022 @ IEEE MDM'22</title>
+        <meta name="description"
+        content="2nd IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems ( ALIAS 2022 ),
+        collocated with the 23rd IEEE Intl. Conference on Mobile Data Management ( MDM 2022 )"/>
+        <meta name="author" content="Data Management Systems Laboratory"/>
+        
+        <!-- Mobile Specific Metas
+         ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        
+        <!-- CSS Files
+         
+         * alpha_background.css		- Classes for applying an alpha black or white background
+         * grid.css					- Responsive grid system based on "Skeleton" by Dave Gamache (http://www.getskeleton.com/)
+         * style.css					- Most of the css is here
+         * responsive_custom			- CSS override for responsive layout
+         ================================================== -->
+        
+        <link rel="stylesheet" type="text/css" href="css/twitter.css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/cssreset-min.css"/>
+        <link rel="stylesheet" href="css/alpha_background.css"/>
+        <link rel="stylesheet" href="css/grid.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+		
+<style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+        
+        <script language="JavaScript">
+		//*******REMEMBER TO UNCOMMENT THAT WHEN GOES IN PRODUCTION*********
+                if (window.location.protocol != "https:")
+                  window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+            //////////////////////////////////////////////////////////////
+            
+            function spiderjam(mym, myd) {
+                // the mailto chunck is written at runtime and therefore will protect you from
+                // mail crawlers which usually extract mail addresses from raw html text
+                document.write("<a href=mailto:" + mym + "&#64;" + myd + ">" + mym + "&#64;" + myd + "</a>");
+            }
+        
+        function showAcceptedPapers() {
+            $('#myModal').modal('show');
+            $('#myModal').modal('handleUpdate')
+        }
+        
+        function showModal(id) {
+            $('#' + id).modal('show');
+            $('#' + id).modal('handleUpdate')
+        }
+        </script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        
+        <!-- Favicons
+         ================================================== -->
+        <!-- <link rel="shortcut icon" href="images/favicon.ico">-->
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"/>
+        <!-- Google Web Fonts
+         
+         * This template uses 'PT Serif' and 'Open Sans'
+         ================================================== -->
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700'
+        rel='stylesheet' type='text/css'/>
+        
+    </head>
+    <body data-spy="scroll" data-target="#section-topbar">
+        
+        <!-- Topbar: fixed + datascroll
+         
+         * the attribute data-scrollspy is for automatically updating nav targets based on scroll position
+         * scroll the area below the navbar and watch the active class change
+         ================================================== -->
+        <div id="section-topbar">
+            <div id="topbar-inner">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+                            <div class="container">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header page-scroll">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#nav-bar-humocomp">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="index.html">ALIAS22</a>
+                                </div>
+                                
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="navbar-collapse collapse" id="nav-bar-humocomp" style="height: 1px;">
+                                    <ul class="nav navbar-nav navbar-right" id="nav">
+                                        <li class="menu-item page-scroll"><a href="index.html">About</a></li>
+										<li class="menu-item page-scroll">
+											<a href="index.html">Program</a>
+											<ul style="background-color: #343a40;  ">
+											   <li >
+												<!---<a style="color: white; padding: 5px 35px 5px 35px;"  id="myBtn">--->
+												<a style="color: white; padding: 5px 35px 3px 35px;"  href="speakers.html">
+													Keynote&nbsp;Speakers
+												</a> 
+											   </li>
+											   <li >
+												<!---<a style="color: white; padding: 5px 35px 5px 35px;"  id="myBtn">--->
+												<a style="color: white; padding: 2px 42px 5px 35px;"  href="acceptedpapers.html">
+													Accepted&nbsp;Papers
+												</a> 
+											   </li>
+											</ul>
+										</li>
+                                        <li class="menu-item page-scroll"><a href="index.html"><font color=red><b>Submit</b></font></a></li>
+                                        <li class="menu-item page-scroll"><a href="index.html">Dates</a></li>
+                                        <li class="menu-item page-scroll"><a href="index.html">Organizers</a></li>
+                                        <!--<li class="menu-item page-scroll"><a href="#section-tpc">TPC</a></li>-->
+                                        <li class="menu-item page-scroll"><a target="_blank" href="cfp/alias22-cfp.txt" target="_blank">CFP-TXT</a> </li>
+                                        <!--<li class="menu-item page-scroll"><a href="#" onclick="showAcceptedPapers();">Papers</a></li>-->
+                                        <li class="menu-item page-scroll"><a href="index.html">Sponsors</a></li>
+										<li class="menu-item page-scroll"><a target="_blank" href="https://alias19.cs.ucy.ac.cy/" target="_blank">Previous ALIAS</a> </li>
+                                        <li class="menu-item page-scroll"><a href="#section-contact">Contact</a></li>
+										
+                                        
+                                        <li class="menu-item page-scroll">
+											<!---<a target="_blank" href="https://www.comp.hkbu.edu.hk/mdm2019/">MDM’19</a>--->
+											<a target="_blank" href="https://mdm2022.cs.ucy.ac.cy/">MDM’22</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </nav>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- // .sixteen -->
+                </div>
+                <!-- // .container -->
+                
+                <div class="clear"></div>
+            </div>
+            <!-- // #topbar-inner -->
+        </div>
+        <!-- // #section-topbar -->
+        
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>gBoxian Dong (Esri)</h2>
+			<br>
+			<h4>Indoor positioning from a GIS industry’s perspective: scale and resolution</h4>
+			<p>Summary: Coming soon</p>
+			<br>
+			<img src="images/speaker/BDong.jpg" alt="" width="120" class="img_left responsive"/>
+			<p><strong>Bio:</strong> Boxian Dong is the lead scientist and the product owner of ArcGIS IPS (Indoor Positioning System) core component from Esri R&D center at Vienna, Austria. He is currently leading the indoor positioning technologies research and the development of the indoor positioning SDK API to support indoor application development. He has worked and pioneering indoor positioning algorithm for indoo.rs GmbH since 2013 and continues his work after indoo.rs GmbH has been acquired by Esri. Prior to joining indoo.rs GmbH and Esri, Boxian Dong worked in the fields of signal processing, ubiquitous computing, as well as general Machine Learning.</p>
+		  </div>
+
+		</div>
+		
+		<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+		</script>
+        
+        <!-- about
+         ================================================== -->
+        <div id="section-speakers">
+            <div class="container">
+                <div class="sixteen columns txt_center">
+                    <h2><span style="text-transform: none;"> The 2nd IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems
+                        (ALIAS 2022)</span></h2>
+                    
+                    <p class="headline"><span style="font-size: large">  collocated with the 23rd IEEE Intl. Conference on Mobile Data Management
+                        (<a href="https://mdm2022.cs.ucy.ac.cy/" target="_blank">MDM 2022</a>)</span><br>
+                    June 6, 2022, Online<br></p>
+				
+					<hr>
+					<h2><span style="text-transform: none;"> Keynote Speakers</span></h2>
+					<hr>
+                </div>
+                <!-- // .sixteen -->
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+        <!-- Event
+         * Event title & date, time, and location
+         ================================================== -->
+        <br>
+		<div class="container">
+		  <div class="row">
+		  
+			<div class="col-sm-12">
+				<h2>Boxian Dong (Esri)</h2>
+				
+				<br>
+				<h4>Indoor positioning from a GIS industry’s perspective: scale and resolution</h4>
+				<p>Summary: <br>A Geographic Information System (GIS) is the tool that connects information with space and time. It helps users understand where, when, how and why things are happening, and to predict what things will happen in the future. GIS has proven to help businesses to increase their revenue, scientists to protect the environment, communities to strengthen safety and societies to combat inequality. Compared to the outdoor counterparts, indoor GIS is still in its infancy. However, this is neither caused by the lack of applications nor by the lack of demand. After all, we spend 90% of our time indoors and require at least the same amount of safety, support and convenience as we do outdoors.
+					<br>
+					The Global Positioning System (GPS), which provides outdoor positions up to submeter resolution at a global scale, is a major contribution to the success of the outdoor GIS. It makes data processing, not data acquisition the bottleneck of the GIS applications. Data acquisition in an indoor environment, on the other hand, is still limited by the availability of indoor positioning and/or the lack of positioning resolution (accuracy). This contributes not only to the poor adoption of indoor GIS usages, but also to the lack of data availability for indoor applications at local and global scales.
+					<br>
+					In this talk, we will discuss the outdoor and indoor GIS applications with respect to scale and resolution, which drive the requirements for different coverages and levels of positioning accuracy. We will also discuss different technologies that will provide solutions for an indoor positioning system and Esri's implementation of such a system.
+				</p>
+			</div>
+			
+		  </div>
+		  
+		  <div class="row">
+			<div class="col-sm-2">
+			  <img src="images/speaker/BDong.jpg" alt="" width="180" class="img_left responsive"/>
+			</div>
+			<div class="col-sm-10">
+			  <p><strong>Bio:</strong> Boxian Dong is the lead scientist and the product owner of ArcGIS IPS (Indoor Positioning System) core component from Esri R&D center at Vienna, Austria. He is currently leading the indoor positioning technologies research and the development of the indoor positioning SDK API to support indoor application development. He has worked and pioneering indoor positioning algorithm for indoo.rs GmbH since 2013 and continues his work after indoo.rs GmbH has been acquired by Esri. Prior to joining indoo.rs GmbH and Esri, Boxian Dong worked in the fields of signal processing, ubiquitous computing, as well as general Machine Learning.</p>
+			</div>
+			
+		</div>
+		  
+		  <br><br>
+		  
+		</div>
+                
+                <!-- Contact
+                 ================================================== -->
+                <div id="section-contact" style="background-color: #20b6db">
+                    <div class="container">
+                        
+                        <div class="five columns">
+                            
+                            <div id="box-contact">
+                                <h3>For further information please contact us at:</h3>
+                                	  <script language="JavaScript">
+                                        spiderjam('alias22workshop','gmail.com');
+                                      </script>
+                            </div>
+                            
+                            <a href="cfp/alias22-cfp.txt" target="_blank"
+                                class="link-pdf"><span>Download</span><br/><span>cfp</span></a>
+                            
+                            <!-- // .box-contact -->
+                        </div>
+                        
+                        
+                        <div class="eleven columns">
+                            <div id="map-wrap" style="margin: 5px">
+                                <iframe width="100%" height="500" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" allow="geolocation" src="https://ap.cs.ucy.ac.cy/viewer/?cuid=ucy"></iframe>
+                            </div>
+                            
+                        </div>
+                        <!--// .four -->
+                    </div>
+                    <!-- // .container -->
+                </div>
+                <!-- // #section-contact -->
+                
+                <!-- Footer
+                 ================================================== -->
+                <div id="section-footer">
+                    <div class="container">
+                        
+                        <div class="eight columns">
+                            <p id="copytext">Copyright &copy; ALIAS 2022. Developed by <a href="http://dmsl.cs.ucy.ac.cy/"
+                                target="_blank" title="">DMSL</a>.
+                            </p>
+                        </div>
+                        <!-- // .eight -->
+                        
+                        <div class="eight columns">
+                            <ul id="social">
+                                <!--<li><a href="https://www.facebook.com/groups/537714242981106/" target="_blank" title=""><img-->
+                                <!--src="images/icons/icon_facebook.png" alt="Facebook"/></a></li>-->
+                                <li><a href="https://twitter.com/2022ALIAS" target="_blank" title=""><img
+                                    src="images/icons/icon_twitter.png" alt="Twitter"/></a></li>
+                            </ul>
+                            <!-- // ul#social -->
+                        </div>
+                        <!-- // .eight -->
+                        
+                        <div class="clear"></div>
+                    </div>
+                    <!-- // .container -->
+                </div>
+                <!-- // #section-footer -->
+                
+                <!-- Javascript files
+                 ================================================== -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                
+                <!--<script src="js/selectnav.min.js"></script>-->
+                <script src="js/bootstrap-scrollspy.js"></script>
+                <script src="js/jquery.easing.min.js"></script>
+                <script src="js/jquery.custom.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <!-- Custom Theme JavaScript -->
+                <script src="js/freelancer.js"></script>
+                <!-- End Document
+                 ================================================== -->
+                </body>
+</html>
