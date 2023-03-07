@@ -1,0 +1,206 @@
+             C A L L   F O R   P A P E R S
+
+The 3rd IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems
+              (ALIAS 2023), collocated with the
+
+     24th IEEE Intl. Conference on Mobile Data Management (MDM 2023)
+
+                   July 3, 2023, Singapore 
+
+                https://alias23.cs.ucy.ac.cy/
+
+
+AIMS & TOPICS OF INTEREST:
+
+The IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems (ALIAS)
+aims to share new research paradigms in constituent technologies and enabling
+infrastructure of Indoor Information Systems (IIS), ranging from data-driven
+localization algorithms leveraging artificial neural networks, to data privacy
+handling schemes, and indoor data management operators. Driven by the fact that
+90% of human activities are carried out in indoor spaces, the successful launching
+of popular IIS applications relies on stored indoor spatial models fusing sensor
+information, exploiting sensor prevalence in smartphone devices and wireless
+connectivity pervasiveness, in light of the big data era and accompanying technologies.
+As such, ALIAS serves as a forum to present latest research and engineering results
+while setting the scene for future innovations in Algorithms for Indoor Architectures
+and Systems.
+
+The topics of interest include, but are not limited to:
+
+* Technologies for indoor positioning (e.g., Cellular 3G/4G/5G, Wi-Fi, UWB, RFID, Magnetic,
+Pedestrian Dead-Reckoning, Vision, Hybrid, etc.)
+* Contact tracing and social distancing for pandemics
+* 2D and 3D operators for localization and analytics
+* Modeling and representation of indoor spaces
+* Indoor GIS integration efforts (IndoorOSM, IndoorGML)
+* Storage, processing and indexing operators for indoor data
+* Collaborative positioning and crowdsourcing
+* Indoor analytics and indoor decision support systems
+* Hazard dispersion in indoor spaces
+* Agent-based modelling
+* Visual analytics of indoor data
+* Big-data processing of indoor data
+* Privacy issues with indoor technologies
+* Human mobility data acquisition, handling, and analysis in indoor spaces
+* Data quality and uncertainty issues study on indoor mobility data
+* Discovery of indoor mobility patterns
+* Theoretic and/or empirical indoor modelling issues
+* Semantic knowledge harvesting and ontologies for indoor data
+* Recommender Systems for indoor data (e.g., POIs, services)
+* Real-time analysis of data generated in indoor spaces (audio, video, text)
+* Social behaviour analysis on indoor mobility data
+* Machine learning on indoor data
+* Security and Privacy in indoor mobile systems
+* Robotics for logistics operations in indoor spaces
+* Indoor Case Studies (e.g., Healthcare, Airports, Campuses)
+* Interactive media technologies to indoor (Augmented/Virtual/Mixed Reality)
+* Offline and Hybrid Online/Offline Navigation and Context Awareness
+* Mapmatching Algorithms and Systems
+* Out-of-the-box application domains for indoor (blockchain, AI, IoT)
+
+The workshop will be organized in a manner that fosters interaction and
+exchange of ideas among the participants. Besides regular papers, we
+will also consider vision papers that have the potential to stimulate
+debate on existing solutions or open  challenges. We additionally plan
+to accept a limited number of demonstration papers where researchers and
+technologists will have the opportunity to describe an innovative system
+or tool in the area of data management for mobile and wireless access.
+We discourage the submission of incremental papers.
+
+
+IMPORTANT DATES
+
+Paper/Vision/Demo Submission: Fri., March 31, 2023 (midnight AoE)
+Notification of Acceptance:   Fri., April 14, 2023 
+Camera-ready Version Due:     Fri., Apr. 28, 2023 (midnight AoE)
+Workshop Date:                Mon., July 3, 2023
+
+
+SUBMISSION INSTRUCTIONS AND PROCEEDINGS
+
+Manuscripts  in  the following  categories  will  be considered  for
+publication in the 2nd IEEE Intl. Workshop on ALgorithms for Indoor
+Architectures and Systems:
+
+* Regular papers  (max. 6  pages): The  submission should  describe
+significant  theoretical and/or  experimental  contributions to  the
+topics of the workshop.
+
+* Vision or Demo  papers (max. 3 pages): The  submission should either describe
+some vision in the scope of the workshop or the architecture, implementation
+and usage of innovative tools or systems that fit the context of the workshop.
+The presentation of vision or demo papers will be conducted in a designated
+session during the workshop (in the form of short presentations).
+
+All of the submissions should be in PDF format and conform to the IEEE MDM'23
+proceedings format. Submitted papers must not have been published or currently
+be under consideration for publication at another venue.
+
+All of the submissions will be handled electronically. Each paper will
+be  reviewed by several  members of the  program committee.
+Detailed submission information will be posted on the website of the workshop.
+
+The workshop proceedings will be published in the IEEE MDM proceedings
+(volume 2) by the IEEE Computer Society and electronic versions of the papers
+will be included in the IEEE Xplore and DBLP.
+
+
+*** Submission URL ***
+
+https://cmt3.research.microsoft.com/ALIAS2023/
+
+
+WORKSHOP CHAIRS
+
+* Christos Laoudias
+KIOS Research and Innovation Center of Excellence 
+University of Cyprus, Cyprus
+laoudias[AT]ucy.ac.cy
+https://www.kios.ucy.ac.cy/laoudias/
+
+* Sisi Zlatanova
+GRID, Faculty of the Built Environment
+University of New South Wales, Australia
+s.zlatanova[AT]unsw.edu.au
+https://www.unsw.edu.au/staff/sisi-zlatanova
+
+* Sunwoo Kim
+Department of Electronic Engineering
+Hanyang University, Republic of Korea
+remero[AT]hanyang.ac.kr
+https://remero6.wixsite.com/wslhanyang/about-us-1
+
+* Nader Moayeri
+Communications Technology Laboratory
+NIST, USA
+nader.moayeri[AT]nist.gov
+https://www.nist.gov/people/nader-moayeri
+
+
+PUBLICITY CHAIR
+
+* Marios Raspopoulos
+Department of Electrical and Electronic Engineering
+University of Central Lancashire Cyprus, Cyprus
+MRaspopoulos[AT]uclan.ac.uk
+https://www.uclancyprus.ac.cy/academic/dr-marios-raspopoulos/
+
+
+STEERING COMMITTEE
+
+* Demetrios Zeinalipour-Yazti
+Department of Computer Science
+University of Cyprus, Cyprus
+dzeina[AT]cs.ucy.ac.cy
+https://www.cs.ucy.ac.cy/~dzeina/
+
+* Nacim Ramdani
+PRISME Laboratory
+University of Orleans, France
+nacim.ramdani[AT]univ-orleans.fr
+https://agora.bourges.univ-orleans.fr/ramdani/
+
+* Dong-Soo Han
+Department of Computer Science
+Korea Advanced Institute of Science and Technology (KAIST), Korea
+dshan[AT]kaist.ac.kr
+https://sites.google.com/site/profdshan/
+
+
+TECHNICAL PROGRAM COMMITTEE
+
+TBA
+
+
+WEBMASTER
+
+* Soteris Constantinou, University of Cyprus, Cyprus
+
+
+ORGANIZERS
+
+Korea Advanced Institute of Science and Technology (KAIST)
+https://www.kaist.ac.kr/html/en/
+
+University of Cyprus
+https://www.cs.ucy.ac.cy/
+
+University of Orleans
+https://www.univ-orleans.fr/
+
+
+SUPPORT
+
+RESPECT - Secure and Privacy-preserving Indoor Robotics for Healthcare Environments
+https://www.project-respect.eu/
+
+ANYPLACE - A free and open Indoor Navigation Service with superb accuracy!
+https://anyplace.cs.ucy.ac.cy/
+
+KIOS Research and Innovation Center of Excellence
+University of Cyprus, Cyprus
+https://www.kios.ucy.ac.cy/
+
+CONTACT
+
+For further information please contact us at: alias23workshop[AT]gmail.com

@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+ <html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+ <html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+ <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+    <head>
+        
+        <!-- Basic Page Needs
+         ================================================== -->
+        <meta charset="utf-8"/>
+        <title>ALIAS 2023 @ IEEE MDM'23</title>
+        <meta name="description"
+        content="3rd IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems ( ALIAS 2023 ),
+        collocated with the 24th IEEE Intl. Conference on Mobile Data Management ( MDM 2023 )"/>
+        <meta name="author" content="Data Management Systems Laboratory"/>
+        
+        <!-- Mobile Specific Metas
+         ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        
+        <!-- CSS Files
+         
+         * alpha_background.css		- Classes for applying an alpha black or white background
+         * grid.css					- Responsive grid system based on "Skeleton" by Dave Gamache (http://www.getskeleton.com/)
+         * style.css					- Most of the css is here
+         * responsive_custom			- CSS override for responsive layout
+         ================================================== -->
+        
+        <link rel="stylesheet" type="text/css" href="css/twitter.css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/cssreset-min.css"/>
+        <link rel="stylesheet" href="css/alpha_background.css"/>
+        <link rel="stylesheet" href="css/grid.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+		
+<style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+        
+        <script language="JavaScript">
+		//*******REMEMBER TO UNCOMMENT THAT WHEN GOES IN PRODUCTION*********
+            //    if (window.location.protocol != "https:")
+            //      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+            //////////////////////////////////////////////////////////////
+            
+            function spiderjam(mym, myd) {
+                // the mailto chunck is written at runtime and therefore will protect you from
+                // mail crawlers which usually extract mail addresses from raw html text
+                document.write("<a href=mailto:" + mym + "&#64;" + myd + ">" + mym + "&#64;" + myd + "</a>");
+            }
+        
+        function showAcceptedPapers() {
+            $('#myModal').modal('show');
+            $('#myModal').modal('handleUpdate')
+        }
+        
+        function showModal(id) {
+            $('#' + id).modal('show');
+            $('#' + id).modal('handleUpdate')
+        }
+        </script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        
+        <!-- Favicons
+         ================================================== -->
+        <!-- <link rel="shortcut icon" href="images/favicon.ico">-->
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"/>
+        <!-- Google Web Fonts
+         
+         * This template uses 'PT Serif' and 'Open Sans'
+         ================================================== -->
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700'
+        rel='stylesheet' type='text/css'/>
+        
+    </head>
+    <body data-spy="scroll" data-target="#section-topbar">
+        
+        <!-- Topbar: fixed + datascroll
+         
+         * the attribute data-scrollspy is for automatically updating nav targets based on scroll position
+         * scroll the area below the navbar and watch the active class change
+         ================================================== -->
+        <div id="section-topbar">
+            <div id="topbar-inner">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+                            <div class="container">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header page-scroll">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#nav-bar-humocomp">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <!---<a class="navbar-brand" href="#section-speakers">ALIAS22</a>--->
+                                    <a class="navbar-brand" href="index.html">ALIAS23</a>
+                                </div>
+                                
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="navbar-collapse collapse" id="nav-bar-humocomp" style="height: 1px;">
+                                    <ul class="nav navbar-nav navbar-right" id="nav">
+                                        <li class="menu-item page-scroll"><a href="#section-about">About</a></li>
+										<li class="menu-item page-scroll">
+											<a href="#section-programs">Program</a>
+											<!---<ul style="background-color: #343a40;  ">
+											   <li >
+												
+												<a style="color: white; padding: 5px 35px 3px 35px;"  href="speakers.html">
+													Keynote&nbsp;Speakers
+												</a> 
+											   </li>
+											   <li >
+												
+												<a style="color: white; padding: 2px 42px 5px 35px;"  href="acceptedpapers.html">
+													Accepted&nbsp;Papers
+												</a> 
+											   </li>
+											</ul>--->
+										</li>
+                                        <li class="menu-item page-scroll"><a href="#section-submit"><font color=red><b>Submit</b></font></a></li>
+                                        <li class="menu-item page-scroll"><a href="#section-dates">Dates</a></li>
+                                        <li class="menu-item page-scroll"><a href="#section-organization">Organizers</a></li>
+                                        <!--<li class="menu-item page-scroll"><a href="#section-tpc">TPC</a></li>-->
+                                        <li class="menu-item page-scroll"><a target="_blank" href="cfp/alias23-cfp.txt" target="_blank">CFP-TXT</a> </li>
+                                        <!--<li class="menu-item page-scroll"><a href="#" onclick="showAcceptedPapers();">Papers</a></li>-->
+                                        <li class="menu-item page-scroll"><a href="#section-sponsors">Sponsors</a></li>
+										<li class="menu-item page-scroll"><a target="_blank" href="https://alias22.cs.ucy.ac.cy/" target="_blank">Previous ALIAS</a> </li>
+                                        <li class="menu-item page-scroll"><a href="#section-contact">Contact</a></li>
+										
+                                        
+                                        <li class="menu-item page-scroll">
+											<!---<a target="_blank" href="https://www.comp.hkbu.edu.hk/mdm2019/">MDM’19</a>--->
+											<a target="_blank" href="https://mdmconferences.org/mdm2023/">MDM’23</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </nav>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- // .sixteen -->
+                </div>
+                <!-- // .container -->
+                
+                <div class="clear"></div>
+            </div>
+            <!-- // #topbar-inner -->
+        </div>
+        <!-- // #section-topbar -->
+        
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Boxian Dong (Esri)</h2>
+			<br>
+			<h4>Indoor positioning from a GIS industry’s perspective: scale and resolution</h4>
+			<p>Summary: Coming soon</p>
+			<br>
+			<img src="images/speaker/BDong.jpg" alt="" width="120" class="img_left responsive"/>
+			<p><strong>Bio:</strong> Boxian Dong is the lead scientist and the product owner of ArcGIS IPS (Indoor Positioning System) core component from Esri R&D center at Vienna, Austria. He is currently leading the indoor positioning technologies research and the development of the indoor positioning SDK API to support indoor application development. He has worked and pioneering indoor positioning algorithm for indoo.rs GmbH since 2013 and continues his work after indoo.rs GmbH has been acquired by Esri. Prior to joining indoo.rs GmbH and Esri, Boxian Dong worked in the fields of signal processing, ubiquitous computing, as well as general Machine Learning.</p>
+		  </div>
+
+		</div>
+		
+		<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+		</script>
+        
+        <!-- about
+         ================================================== -->
+        <div id="section-speakers">
+            <div class="container">
+                <div class="sixteen columns txt_center">
+                    <h2><span style="text-transform: none;"> The 3rd IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems
+                        (ALIAS 2023)</span></h2>
+                    
+                    <p class="headline"><span style="font-size: large">  collocated with the 24th IEEE Intl. Conference on Mobile Data Management
+                        (<a href="https://mdmconferences.org/mdm2023/" target="_blank">MDM 2023</a>)</span><br>
+                    July 3, 2023, Singapore<br></p>
+                </div>
+                <!-- // .sixteen -->
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+        <!-- Event
+         * Event title & date, time, and location
+         ================================================== -->
+        <div id="section-header" style="background-color: #20b6db"  >
+            
+            <div class="container">
+                
+                <!-- // .five -->
+                <div class="five columns">
+                    
+                    <div>
+                        <div class="root timeline ltr customisable-border  twitter-timeline not-touch twitter-timeline-rendered var-footerless">
+                            <div class="timeline-header customisable-border" data-scribe="section:header">
+                                
+                                <h3 style="color: #000000; font-weight: bolder;">
+                                    Important Dates
+                                </h3>
+                            </div>
+                            <div style="width: 100%">
+                                <img class="pin_img" src="images/pin.png">
+                                    
+                                    <div class="clear"></div>
+                                    </div>
+                            
+                            <div role="alert" class="new-tweets-bar" aria-live="polite" aria-atomic="false"
+                                aria-relevant="additions">
+                                <button data-scribe="element:show_new_tweets"><i class="ic-top"></i>New Tweets</button>
+                            </div>
+							<!---<div class="stream" data-scribe="section:stream" style="height: 230px; color: #000000; z-index: 1000;">--->
+                            <div class="stream" data-scribe="section:stream" style=" color: #000000; z-index: 1000;">
+                                <div class="top_txt top_img">
+                                    <img class="top_image" src="images/icons/icon_date_black.jpg">
+                                        <img src="images/icons/icon_time_black.jpg">
+                                            </div>
+                                <div class="top_txt">
+                                    <strong>Submission:</strong>
+                                    <span>Mar. 31, 2023</span><br>
+                                    <strong>Notification:</strong>
+                                    <span>Apr. 14, 2023</span> <br>
+									<strong>Author Registrat.:</strong>
+                                    <span>Apr. 24, 2023</span> <br>
+                                    <strong>Camera-ready:</strong>
+                                    <span>Apr. 28, 2023</span> <br>									
+                                   <strong>Workshop Date:</strong>
+                                    <span>Jul. 3, 2023</span> <br><br><br>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="six columns">
+                    
+                    <div class="root timeline ltr customisable-border  twitter-timeline not-touch twitter-timeline-rendered var-footerless">
+                        <div class="timeline-header customisable-border" data-scribe="section:header">
+                            <h3 style="color: #000000; font-weight: bolder">
+                                Support
+                            </h3>
+                        </div>
+                        
+                        <!---<div class="stream" data-scribe="section:stream" style="height: 230px;">--->
+						<div class="stream" data-scribe="section:stream" >
+                            <div class="top_txt">
+                                
+                                <div class="sponsor_image_top" style="padding: 5px">
+                                    <!---<a href="http://www.endorse-project.eu/" target="_blank" title="">
+                                        <img src="images/logos/endorse.png" alt="" width="180" class="img_center"/></a>--->
+										<a href="https://www.project-respect.eu/" target="_blank" title="">
+                                        <img src="images/logos/respect.png" alt="" width="120" class="img_center responsive"/></a>
+                                    
+                                </div>
+                                
+                                <div class="sponsor_image_top" style="padding: 5px">
+                                    <a href="http://anyplace.cs.ucy.ac.cy/" target="_blank" title="">
+                                        <img src="images/logos/anyplace.png" alt="" width="130" class="img_center responsive"/></a>
+                                    
+                                </div>
+								<br>
+								<div class="sponsor_image_top" style="padding: 5px">
+                                    <a href="https://www.kios.ucy.ac.cy/" target="_blank" title="">
+                                        <img src="images/logos/kios.png" alt="" width="130" class="img_center responsive"/></a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div style="height: 120px; z-index: 2000">
+                    <div class="five columns">
+                        <p  d="logo-desc">
+                       <a class="twitter-timeline" data-height="250" href="https://twitter.com/2023ALIAS?ref_src=twsrc%5Etfw">Tweets by 2023ALIAS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script>
+                        <a style="left:50%" href="https://twitter.com/2023ALIAS" class="twitter-follow-button" data-show-count="false">Follow @2023ALIAS</a>
+                        
+                        </p>						
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+            
+            <!-- // .container -->
+            
+            <div class="container">
+                
+                <div class="sixteen columns timeline center">
+                    
+                    <div class="sponsor_image_top" style="padding: 5px; margin-top: 20px;">
+                        <h3 style="color: #000000; font-weight: bolder;">
+                            Organizers
+                        </h3>
+                        <a href="https://www.kaist.ac.kr/html/en/" target="_blank" title="">
+                            <img src="images/logos/kaist_logo.svg" alt="Korea Advanced Institute of Science and Technology, Korea" width="110" class="img_center"/></a>
+                    </div>
+                    <div class="sponsor_image_top">
+                        <a href="http://www.ucy.ac.cy/en" target="_blank" title=""><br><br>
+                            <img src="images/logos/UCY-Logo---English.png" alt="University of Cyprus, Cyprus" width="220" class="img_center"/></a>
+                    </div>
+                    <div class="sponsor_image_top" style="padding: 5px">
+                        <a href="hhttp://www.univ-orleans.fr/" target="_blank" title="University of Orléans, France"><br><br>
+                            <img src="images/orleans.png" alt="" width="150" class="img_center"/></a>
+                    </div>
+                    <div class="sponsor_image_top" style="padding: 5px !important;">
+                        <h3 style="color: #000000; font-weight: bolder">
+                            Proceedings
+                        </h3><br>
+                        <a href="hhttps://www.computer.org/" target="_blank" title="">
+                            <img src="images/ieeecs.jpg" alt="" width="170" class="img_center"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+            <!-- // .container -->
+            
+            <!-- // #section-info -->
+            <div id="section-info">
+                <div class="container">
+                    <div class="three columns">
+                        <h2>ALIAS 2023</h2>
+                    </div>
+                    <!-- // .four -->
+                    
+                    <div class="five columns">
+                        <div id="box-date">
+                            <h3>Date</h3>
+                            
+                            <p>July 3, 2023</p>
+                        </div>
+                        <!-- // #box-date -->
+                    </div>
+                    <!-- // .four -->
+                    
+                    <div class="four columns">
+                        <div id="box-time">
+                            <h3>Time</h3>
+                            
+                            <p>8:30-17:30</p>
+                        </div>
+                        <!-- // #box-time -->
+                    </div>
+                    <!-- // .four -->
+                    
+                    <div class="four columns">
+                        <div id="box-location">
+                            <h3>Location</h3>
+                            
+                            <p><a style="color: white;" href="#section-contact">Singapore</a></p>
+                        </div>
+                        <!-- // #box-location -->
+                    </div>
+                    <!-- // .four -->
+                    
+                    <div class="clear"></div>
+                </div>
+                <!-- // .container -->
+            </div>
+            <!-- // #section-info -->
+            
+        </div>
+        <!-- // #section-header -->
+        
+        
+        <!-- about
+         ================================================== -->
+        <div id="section-about">
+            <div class="container">
+                <div class="sixteen columns">
+                    <h2>About</h2>
+                </div>
+                <!-- // .sixteen -->
+                <div class="clear"></div>
+                
+                <div class="eight columns">
+                    <p class="headline">ALIAS 2023</p>
+                    
+                    <p><strong style="color: #33A5FF">AIMS & TOPICS OF INTEREST:</strong>
+                        <br>
+                        The IEEE Intl. Workshop on ALgorithms for Indoor Architectures and Systems (ALIAS)
+aims to share new research paradigms in constituent technologies and enabling
+infrastructure of Indoor Information Systems (IIS), ranging from data-driven
+localization algorithms leveraging artificial neural networks, to data privacy
+handling schemes, and indoor data management operators. Driven by the fact that
+90% of human activities are carried out in indoor spaces, the successful launching
+of popular IIS applications relies on stored indoor spatial models fusing sensor
+information, exploiting sensor prevalence in smartphone devices and wireless
+connectivity pervasiveness, in light of the big data era and accompanying technologies.
+As such, ALIAS serves as a forum to present latest research and engineering results
+while setting the scene for future innovations in Algorithms for Indoor Architectures
+and Systems.
+                        <br>
+                        <br>
+                        </p>
+                        
+                        <p>
+                        <strong style="color: #33A5FF">Discussion:</strong>
+                        <br>
+                        The workshop will be organized in a manner that fosters interaction and
+exchange of ideas among the participants. Besides regular papers, we
+will also consider vision papers that have the potential to stimulate
+debate on existing solutions or open  challenges. We additionally plan
+to accept a limited number of demonstration papers where researchers and
+technologists will have the opportunity to describe an innovative system
+or tool in the area of data management for mobile and wireless access.
+We discourage the submission of incremental papers.
+                        <br>
+                        <br>
+                        </p>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- // .eight -->
+                        <div class="eight columns">
+                        <p>
+                        <strong style="color: #33A5FF">The topics of interest include, but are not limited to:</strong>
+                        <ul class="circle">
+                        <li>Technologies for indoor positioning (e.g., Cellular 3G/4G/5G, Wi-Fi, UWB, RFID, Magnetic, Pedestrian Dead-Reckoning, Vision, Hybrid, etc.)</li>
+<li>Contact tracing and social distancing for pandemics</li>
+<li>2D and 3D operators for localization and analytics</li>
+<li>Modeling and representation of indoor spaces</li>
+<li>Indoor GIS integration efforts (IndoorOSM, IndoorGML)</li>
+<li>Storage, processing and indexing operators for indoor data</li>
+<li>Collaborative positioning and crowdsourcing</li>
+<li>Indoor analytics and indoor decision support systems</li>
+<li>Hazard dispersion in indoor spaces</li>
+<li>Agent-based modelling</li>
+<li>Visual analytics of indoor data</li>
+<li>Big-data processing of indoor data</li>
+<li>Privacy issues with indoor technologies</li>
+<li>Human mobility data acquisition, handling, and analysis in indoor spaces</li>
+<li>Data quality and uncertainty issues study on indoor mobility data</li>
+<li>Discovery of indoor mobility patterns</li>
+<li>Theoretic and/or empirical indoor modelling issues</li>
+<li>Semantic knowledge harvesting and ontologies for indoor data</li>
+<li>Recommender Systems for indoor data (e.g., POIs, services)</li>
+<li>Real-time analysis of data generated in indoor spaces (audio, video, text)</li>
+<li>Social behaviour analysis on indoor mobility data</li>
+<li>Machine learning on indoor data</li>
+<li>Security and Privacy in indoor mobile systems</li>
+<li>Robotics for logistics operations in indoor spaces</li>
+<li>Indoor Case Studies (e.g., Healthcare, Airports, Campuses)</li>
+<li>Interactive media technologies to indoor (Augmented/Virtual/Mixed Reality)</li>
+<li>Offline and Hybrid Online/Offline Navigation and Context Awareness</li>
+<li>Mapmatching Algorithms and Systems</li>
+<li>Out-of-the-box application domains for indoor (blockchain, AI, IoT)</li>
+                        </ul>
+                        </p>
+                        </div>
+                        
+                        <div class="clear"></div>
+                        </div>
+                        <!-- // .container -->
+                        </div>
+                        <!-- // #section-about -->
+                        
+                        
+                        <!-- Rules
+                        ================================================== -->
+                        
+                        <div id="section-programs">
+                        <div class="container">
+                        <div class="sixteen columns">
+                        <h2>PROGRAM</h2>
+                        </div>
+                        <!-- // .sixteen -->
+                        <div class="clear"></div>
+                        <br>
+                        
+                        <div class="twelve columns">
+                        <p> 
+						<strong style="color: #33A5FF">Coming soon...</strong>
+                        <!---<strong style="color: #33A5FF"> 9:00 - 9:10: </strong><strong>Workshops Welcome and Opening</strong>
+			<br/>
+		 	</p>
+		
+			<p>                         
+                         <strong style="color: #33A5FF"> 9:10 - 10:10: </strong><strong>Keynote 1 / Workshops – Sanjay Chawla (Qatar Computing Research Institute / HBKU, Qatar)</strong>
+			 <br/>
+                         <span>URL for the Workshop: <a href="https://mdm2022.cs.ucy.ac.cy/">https://mdm2022.cs.ucy.ac.cy/</a></span>
+			 <br/>
+                         </p>
+                         
+                         <p>
+                         <strong style="color: #33A5FF">10:10 - 10:25: </strong><strong>Break</strong><br/><br/>
+			
+			             <strong style="color: #33A5FF">10:25 - 11:55: </strong><strong>Session I – Indoor Localization</strong><br/>
+			 <br/>
+			 <strong style="color: #33A5FF"> 10:25 - 10:45 </strong><br/>
+			 <span><strong style="color: #33A5FF"> + </strong> "Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Datasets", Darwin P Quezada Gaibor (Universitat Jaume I), Lucie Klus (Tampere University), Joaquin Torres Sospedra (Universitat Jaume I), Elena Simona Lohan (Tampere University), Jari Nurmi (Tampere University), Carlos Granell (Universitat Jaume I), Joaquin Huerta (Universitat Jaume I)</span> 
+			 <br/>
+		         <br/>
+                         <strong style="color: #33A5FF"> 10:45 - 11:05 </strong><br/>
+			 <span><strong style="color: #33A5FF"> + </strong> "DNN-based Indoor Fingerprinting Localization with WiFi FTM", Eberechukwu N Paulson (Hanyang University), Hyunwoo Park (Hanynag University), Christos Laoudias (University of Cyprus), Seppo Horsmanheimo (VTT), Sunwoo Kim (Hanyang University)</span>
+        		 <br/>
+                         <br/>
+						 <strong style="color: #33A5FF"> 11:05 - 11:25 </strong><br/>
+                         <span><strong style="color: #33A5FF"> + </strong> "Differentially Private Occupancy Monitoring from WiFi Access Points",
+        		 Abbas Zaidi (University of Southern California), Ritesh Ahuja (University of Southern California), Cyrus Shahabi (University of Southern California)</span>
+                         
+                        <br/>
+                         <br/>
+                         <strong style="color: #33A5FF"> 11:25 - 11:40 </strong><br/>
+			 <span><strong style="color: #33A5FF"> + </strong> "A framework for indoor localization using the magnetic field", Manon Kok (Delft University of Technology), Frida Viset (Delft University of Technology), Mostafa Osman (Delft University of Technology)</span>
+                         <br/>
+			 
+
+			 </p>
+                         
+                         <p>
+                         <strong style="color: #33A5FF">11:40 - 11:55: </strong><br/>
+			 <span><strong style="color: #33A5FF"> + </strong>A-WEAR [H2020 Marie Sklodowska-Curie Innovative Training Network] in a Nutshell (Invited presentation)
+						Viktoriia Shubina (Tampere University and University Politehnica of Bucharest)</strong><br/>
+                         </p>
+						 <p>
+                         <strong style="color: #33A5FF">11:55 - 12:10: </strong><strong>Break</strong><br/>
+                         </p>
+						 <p>
+                         <strong style="color: #33A5FF">12:10 - 13:00: </strong><strong>Keynote – <a href="https://alias22.cs.ucy.ac.cy/speakers.html">Boxian Dong (ESRI, Austria)</a></strong><br/>
+						 <span><strong style="color: #33A5FF"> + </strong>Indoor positioning from a GIS industry’s perspective: scale and resolution</strong>
+                         </p>
+						 <p>
+                         <strong style="color: #33A5FF">13:00 - 14:00: </strong><strong>Lunch Break</strong><br/>
+                         </p>
+                         
+                         <p>
+                         <strong style="color: #33A5FF">14:00 - 15:30: </strong><strong>Session II - Indoor Applications</strong><br/>
+                         <br/>
+                         <strong style="color: #33A5FF"> 14:00 - 14:20 </strong><br/>
+                         <span><strong style="color: #33A5FF"> + </strong> "A combination of visual and temporal trajectory features for cognitive assessment in smart home", Samaneh Zolfaghari (University of Cagliari), Andrea Loddo (University of Cagliari), Barbara Pes (UK), Daniele Riboni (University of Cagliari)</span> 
+                         <br/>
+                         <br/>
+                         <strong style="color: #33A5FF"> 14:20 - 14:40 </strong><br/>
+                         <span><strong style="color: #33A5FF"> + </strong> "Privacy-Preserving Presence Tracing for Pandemics Via Machine-to-Machine Exposure Notifications", 
+			 Christos Laoudias (University of Cyprus), Marios Raspopoulos (University of Central Lancashire Cyprus Campus), Stefanos Christoforou (CYENS), Andreas Kamilaris (CYENS)</span>
+                         <br/>
+                         <br/>
+                         <strong style="color: #33A5FF"> 14:40 - 15:00 </strong><br/>
+            		 <span><strong style="color: #33A5FF"> + </strong> "ASTRO-K: Finding Top-k Sufficiently Distinct Indoor-Outdoor Paths", Vasilis Ethan Sarris (University of Pittsburgh), Constantinos Costa (University of Pittsburgh), Panos K. Chrysanthis (University of Pittsburgh)</span>
+                 	 <br/>
+                         <br/>
+                         <strong style="color: #33A5FF"> 15:00 - 15:15 </strong><br/>
+                         <span><strong style="color: #33A5FF"> + </strong> "Thinking Inclusively with CAPRIO",
+        		 Lucas W. Leiby (University of Pittsburgh), Constantinos Costa (University of Pittsburgh), Panos K. Chrysanthis (University of Pittsburgh)</span>
+                         <br/>
+						 <br/>
+						 <strong style="color: #33A5FF"> 15:15 - 15:30 </strong><br/>
+                         <span><strong style="color: #33A5FF"> + </strong> "Comparing Deep Learning and Human Crafted Features for Recognising Hand Activities of Daily Living from Wearables",
+        		 Eleni Diamantidou (CERTH/ITI), Dimitrios Giakoumis (CERTH/ITI), Konstantinos Votis (CERTH/ITI), Dimitrios Tzovaras (CERTH/ITI), Spiridon Likothanassis (University of Patras)</span>
+                         <br/>
+                                                  
+                         </p>
+                         
+                         <p>
+                         <strong style="color: #33A5FF">15:30 - 15:40: </strong><strong>Closing</strong><br/>
+                         </p>--->
+                       
+                         
+                         
+                 	</div> 
+                <!-- // .eight -->
+                
+                <div class="eight columns">
+                    
+                </div>
+                <!-- // .eight -->
+                
+                <div class="clear"></div>
+            </div>
+            <!-- // .container -->
+        </div>
+        <!-- // #section-rules -->
+        
+        <!-- Submit
+         ================================================== -->
+        <div id="section-submit">
+            <div class="container">
+                <div class="sixteen columns">
+                    <h2>SUBMISSION INSTRUCTIONS AND PROCEEDINGS</h2>
+                </div>
+                <!-- // .sixteen -->
+                
+                <div class="eight columns">
+                    <p class="headline">ALIAS 2023</p>
+                    
+                    <p>
+                    Manuscripts  in  the following  categories  will  be considered  for
+                    publication in the 3rd IEEE Intl. Workshop on ALgorithms for Indoor
+                    Architectures and Systems:
+                    
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong>
+                    <strong>Regular papers  (max. 6  pages):</strong>
+                    The  submission should  describe significant  theoretical and/or  experimental  
+					contributions to  the topics of the workshop.
+                    <br/>
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong>
+                    <strong>Vision or Demo  papers (max. 3 pages):</strong>
+                    The  submission should either describe
+some vision in the scope of the workshop or the architecture, implementation
+and usage of innovative tools or systems that fit the context of the workshop.
+The presentation of vision or demo papers will be conducted in a designated
+session during the workshop (in the form of short presentations).<br/>
+                    </p>
+                    
+                </div>
+                <!-- // .eight -->
+                
+                <div class="eight columns">
+                    <br>
+                    <br>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong>
+                    All of the submissions should be in PDF format and conform to the IEEE MDM'23
+proceedings format. Submitted papers must not have been published or currently
+be under consideration for publication at another venue.
+                    <br/>
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong>
+                    All of the submissions will be handled electronically. Each paper will
+be  reviewed by several  members of the  program committee.
+Detailed submission information will be posted on the website of the workshop.
+                    <br/>
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong>
+                    The workshop proceedings will be published in the IEEE MDM proceedings
+(volume 2) by the IEEE Computer Society and electronic versions of the papers
+will be included in the IEEE Xplore and DBLP.
+                    <br />
+                    </p>
+                </div>
+                <!-- // .eight -->
+                <div class="container">
+                    <div class="sixteen columns timeline center">
+                        <ul id="paper">
+                            <li style="background-color: white;">
+                                <button type="button" class="btn btn-primary" onclick="submitPaper();" style="height: 4em; border-radius: .55rem;">Submit Your Paper</button>
+                                <script>
+				function submitPaper() {
+                                   location.target = "_blank";
+                                   //location.href = "https://cmt.research.microsoft.com/ALIAS2019/";
+								   location.href = "https://cmt3.research.microsoft.com/ALIAS2023/";
+                                } 
+                                </script>
+                            </li>
+                        </ul>
+                        <img src="images/icons/powered_by.jpg">
+                            </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            
+            <!-- // .container -->
+        </div>
+        <!-- // #section-submit -->
+        
+        
+        <!-- Rules
+         ================================================== -->
+        <div id="section-dates">
+            <div class="container">
+                <div class="sixteen columns">
+                    <h2>IMPORTANT DATES</h2>
+                </div>
+                <!-- // .sixteen -->
+                <div class="clear"></div>
+                
+                <div class="twelve columns">
+                    <p class="headline">ALIAS 2023</p>
+                    
+    
+               <!--
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong><strong>Abstract Registration:</strong>
+                    <span> Mon., February 25, 2019 (midnight AoE) </span><br/>
+                    </p>
+                   -->
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong><strong>Paper/Vision/Demo Submission (extended):</strong>
+                    <span> Fri., March 31, 2023 (midnight AoE)</span> <br/>
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong><strong>Notification of Acceptance:</strong>
+                    <span> Fri., April 14, 2023 </span><br/>
+                    </p>
+					
+					 <p>
+                    <strong style="color: #33A5FF"> + </strong><strong>Author Registration Due:</strong>
+                    <span> Fri., April 24, 2023 </span><br/>
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong><strong>Camera-ready Version Due:</strong>
+                    <span> Fri., April 28, 2023 (midnight AoE) </span><br/>
+                    </p>
+                    
+                    <p>
+                    <strong style="color: #33A5FF"> + </strong><strong>Workshop Date:</strong>
+                    <span> Mon., July 3, 2023 </span><br/>
+                    </p>
+                    
+                </div>
+                <!-- // .eight -->
+                
+                <div class="eight columns">
+                    
+                </div>
+                <!-- // .eight -->
+                
+                <div class="clear"></div>
+            </div>
+            <!-- // .container -->
+        </div>
+        <!-- // #section-rules -->
+        
+        <!-- Organization
+         ================================================== -->
+        <div id="section-organization">
+            <div class="container">
+                <div class="sixteen columns">
+                    <h2> WORKSHOP ORGANIZERS</h2>
+                    <table>
+
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top">WORKSHOP CHAIRS:</td>
+                                <td>
+								
+									<a href="https://www.kios.ucy.ac.cy/laoudias/" target="_blank">Christos Laoudias</a><br>
+                                    KIOS Research and Innovation Center of Excellence<br>
+                                    University of Cyprus, Cyprus<br>
+                                    <script language="JavaScript">
+                                        spiderjam('laoudias', 'ucy.ac.cy');
+                                        </script>
+                                    <br><br>
+									
+                                    <a href="https://www.unsw.edu.au/staff/sisi-zlatanova" target="_blank">Sisi Zlatanova</a>
+                                    <br>
+                                    GRID, Faculty of the Built Environment <br>
+                                    University of New South Wales, Australia<br>
+                                    <script language="JavaScript">
+                                        spiderjam('s.zlatanova','unsw.edu.au');
+                                        </script>
+                                    <br><br>  
+									
+									<a href="https://remero6.wixsite.com/wslhanyang/about-5" target="_blank">Sunwoo Kim</a>
+                                    <br>
+                                    Department of Electronic Engineering <br>
+                                    Hanyang University, Republic of Korea<br>
+                                    <script language="JavaScript">
+                                        spiderjam('remero','hanyang.ac.kr');
+                                        </script>
+                                    <br><br>   
+
+									<a href="https://www.nist.gov/people/nader-moayeri" target="_blank">Nader Moayeri</a>
+                                    <br>
+                                    Communications Technology Laboratory <br>
+                                    NIST, USA<br>
+                                    <script language="JavaScript">
+                                        spiderjam('nader.moayeri','nist.gov');
+                                        </script>
+                                    <br><br>  									
+
+									
+                                    
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="vertical-align: top">PUBLICITY CHAIR</td>
+                                <td>
+                                    <a href="https://www.uclancyprus.ac.cy/academic/dr-marios-raspopoulos/" target="_blank">Marios Raspopoulos</a>
+                                    <br>
+                                    Department of Electrical and Electronic Engineering <br>
+                                    University of Central Lancashire Cyprus<br>
+                                    <script language="JavaScript">
+                                        spiderjam('MRaspopoulos', 'uclan.ac.uk');
+                                        </script>
+                                    <br><br>
+                                </td>
+                            </tr>
+							
+							<tr>
+                                <td style="vertical-align: top">STEERING COMMITTEE</td>
+                                <td>
+								
+									<a href="http://www.cs.ucy.ac.cy/~dzeina/" target="_blank">Demetris Zeinalipour</a><br>
+                                    Department of Computer Science<br>
+                                    University of Cyprus, Cyprus<br>
+                                    <script language="JavaScript">
+                                        spiderjam('dzeina', 'cs.ucy.ac.cy');
+                                        </script>
+                                    <br><br>
+									
+                                    <a href="https://agora.bourges.univ-orleans.fr/ramdani/" target="_blank">Nacim Ramdani</a>
+                                    <br>
+                                    PRISME Laboratory<br>
+                                    University of Orleans, France<br>
+                                    <script language="JavaScript">
+                                        spiderjam('nacim.ramdani','univ-orleans.fr');
+                                        </script>
+                                    
+                                    <br><br>
+                                    
+									<a href="https://sites.google.com/site/profdshan/" target="_blank">Dong-Soo Han</a>
+                                    <br>
+                                    Department of Computer Science<br>
+                                    Korea Advanced Institute of Science and Technology (KAIST), Korea<br>
+                                    <script language="JavaScript">
+                                        spiderjam('dshan','kaist.ac.kr');
+                                        </script>
+                                    <br><br>
+									
+                                </td>
+                            </tr>
+							
+							                            
+                            <tr>
+                                <td style="vertical-align: top">TECHNICAL PROGRAM COMMITTEE</td>
+                                <td>
+                                    <ul class="circle">										
+									TBA
+                                       <!--- <li>Adriano Moreira, University of Minho, Portugal</li>
+										<li>Andreas Konstantinidis, Frederick University, Cyprus</li>
+										<li>Antonio Perez Navarro, Universitat Oberta de Catalunya, Spain</li>
+										<li>Aris Lalos, Industrial Systems Institute, Athena Research Center, Greece</li>
+										<li>Christophe Claramunt, Naval Academy Research Institute, France</li>
+										<li>Eftychios Christoforou, University of Cyprus, Cyprus</li>
+										<li>Federica Pascucci, Universita degli Studi Roma Tre, Italy</li>
+										<li>Gentian Jakllari, University of Toulouse, France</li>
+										<li>Grigorios Anagnostopoulos, HES-SO, Switzerland</li>
+										<li>Hua Lu, Aalborg University, Denmark</li>
+										<li>Huan Li, Zhejiang University, China</li>
+										<li>Joaquin Torres Sospedra, Jaume I University, Spain</li>
+										<li>Kai-Florian Richter, Umea University, Sweden</li>
+										<li>Konstantinos Votis, CERTH/ITI, Greece</li>
+										<li>Kourosh Khoshelham, University of Melbourne, Australia</li>
+										<li>Marios Raspopoulos, University of Central Lancashire, Cyprus Campus, Cyprus</li>
+										<li>Nacim Ramdani, University of Orleans, France</li>
+										<li>Paolo Barsocchi, CNR-ISTI, Italy</li>
+										<li>Sergio Ilarri, University of Zaragoza, Spain</li>
+										<li>Sisi Zlatanova, University of New South Wales, Australia</li>
+										<li>Luca De Nardis, Sapienza University of Rome, Italy</li>										
+										<li>Paschalis Mpeis, University of Cyprus, Cyprus</li>
+										<li>Ran Guan, Reimann Lab, Huawei, China</li>
+										<li>Savvas Papaioannou, University of Cyprus</li>
+										<li>Klaus Witrisal, Graz University of Technology, Austria</li>
+										<li>Dragan Stojanovic, University of Nis, Serbia</li>
+										<li>Eleftheria Vellidou, National Technical University of Athens, Greece</li>
+										<li>Gabriele Oliva, University Campus Bio-Medico of Rome, Italy</li>
+										<li>Markus Schneider, University of Florida, USA</li>
+										<li>Joaquin Huerta, Universitat Jaume I, Spain</li>-->
+										
+                                    </ul>
+                                    <br><br>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="vertical-align: top">WEBMASTER</td>
+                                <td>
+									<a href="http://www.cs.ucy.ac.cy/~sconst01/" target="_blank">Soteris Constantinou</a>
+									<br>
+                                    University of Cyprus, Cyprus<br>
+                                    <br><br>
+                                </td>
+                            </tr>
+							
+							
+                            
+                            </table>
+                    <div id="section-tpc"></div>
+                    <br><br>
+                    <div style="background: #fff;font: normal 14px/24px 'Open Sans', " Helvetica Neue", Helvetica, Arial, sans-serif;
+                        width: 100%;">
+                        
+                    </div>
+                    <br>
+                </div>
+                <!-- // .sixteen -->
+            </div>
+            <div class="clear"></div>
+            <!-- // .container -->
+        </div>
+        <!-- // #section-organization -->
+        
+        
+        <!-- Sponsors
+         ================================================== -->
+        <div id="section-sponsors">
+            <div class="container">
+                    
+                    <div class="container">
+                        <div class="four columns">
+                            <h2>Support</h2>
+                        </div>
+                        <!-- // technical sponsors -->
+                        <div class="twelve columns">
+                            <div class="eight columns"> 
+                                <!---<a href="https://www.endorse-project.eu/" target="_blank" title="">
+                                    <img src="images/logos/endorse.png" alt="Safe, Efficient and Integrated Indoor Robotic Fleet in Healthcare and Commercial Spaces" width="250px" class="img_center"/></a>--->
+									<a href="https://www.project-respect.eu/" target="_blank" title="">
+										<img src="images/logos/respect.png" alt="Secure and Privacy-preserving Indoor Robotics for Healthcare Environments" width="160px" class="img_center"/>
+									</a>
+                            </div>
+                            <br/>
+                            <div class="eight columns">
+                                <a href="https://anyplace.cs.ucy.ac.cy/" target="_blank" title="">
+                                    <right><img src="images/logos/anyplace.png" alt="A free and open Indoor Navigation Service with superb accuracy!" width="160px" class="img_center"/></right>
+                                </a>
+                            </div>
+                            <br/>
+							<div class="eight columns">
+                                <a href="https://www.kios.ucy.ac.cy/" target="_blank" title="">
+                                    <right><img src="images/logos/kios.png" alt="KIOS Research and Innovation Centre of Excellence (KIOS CoE)" width="160px" class="img_center"/></right>
+                                </a>
+                            </div>
+                            <br/>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div class="container">
+                        <div class="four columns">
+                            <h2>Organizers</h2>
+                        </div>
+                        
+                        <!-- // supporters --->
+                        <div class="twelve columns">
+                            <div class="eight columns">
+                                <a href="https://www.kaist.ac.kr/html/en/" target="_blank" title="">
+                                    <img src="images/logos/kaist_logo.svg" alt="Korea Advanced Institute of Science and Technology, Korea" width="180px" class="img_center"/></a>
+                            </div>
+                            <br/> <br/>
+                            <div class="eight columns">
+                                <a href="http://www.ucy.ac.cy/en" target="_blank" title="">
+                                    <img src="images/logos/UCY-Logo---English.png" alt="University of Cyprus, Cyprus" width="250px" class="img_center"/></a>
+                            </div>
+                           
+                            <div class="eight columns">
+                                <a href="hhttp://www.univ-orleans.fr/" target="_blank" title="University of Orléans, France">
+                                    <img src="images/orleans.png" alt="" width="210px" class="img_center"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div class="clear"></div>
+                    <div class="container">
+                        <div class="four columns">
+                            <h2>Proceedings</h2>
+                        </div>
+                        
+                        <!-- // proceedings -->
+                        <div class="twelve columns">
+                            <div class="eight columns">
+                                <a href="hhttps://www.computer.org/" target="_blank" title="">
+                                    <img src="images/ieeecs.jpg" alt="" width="250px" class="img_center"/>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                        <div class="clear"></div>
+                        
+                    </div>
+                    <!-- // .container -->
+                </div>
+                <!-- // #section-sponsors -->
+                <!---<br/><br/>--->
+                
+                <!-- Contact
+                 ================================================== -->
+                <div id="section-contact" style="background-color: #20b6db">
+                    <div class="container">
+                        
+                        <div class="five columns">
+                            
+                            <div id="box-contact">
+                                <h3>For further information please contact us at:</h3>
+                                	  <script language="JavaScript">
+                                        spiderjam('alias23workshop','gmail.com');
+                                      </script>
+                            </div>
+                            
+                            <a href="cfp/alias23-cfp.txt" target="_blank"
+                                class="link-pdf"><span>Download</span><br/><span>cfp</span></a>
+                            
+                            <!-- // .box-contact -->
+                        </div>
+                        
+                        
+                        <div class="eleven columns">
+                            <div id="map-wrap" style="margin: 5px">
+                                <iframe width="100%" height="500" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" allow="geolocation" src="https://ap.cs.ucy.ac.cy/viewer/?cuid=ucy"></iframe>
+                            </div>
+                            
+                        </div>
+                        <!--// .four -->
+                    </div>
+                    <!-- // .container -->
+                </div>
+                <!-- // #section-contact -->
+                
+                <!-- Footer
+                 ================================================== -->
+                <div id="section-footer">
+                    <div class="container">
+                        
+                        <div class="eight columns">
+                            <p id="copytext">Copyright &copy; ALIAS 2023. Developed by <a href="http://dmsl.cs.ucy.ac.cy/"
+                                target="_blank" title="">DMSL</a>.
+                            </p>
+                        </div>
+                        <!-- // .eight -->
+                        
+                        <div class="eight columns">
+                            <ul id="social">
+                                <!--<li><a href="https://www.facebook.com/groups/537714242981106/" target="_blank" title=""><img-->
+                                <!--src="images/icons/icon_facebook.png" alt="Facebook"/></a></li>-->
+                                <li><a href="https://twitter.com/2023ALIAS" target="_blank" title=""><img
+                                    src="images/icons/icon_twitter.png" alt="Twitter"/></a></li>
+                            </ul>
+                            <!-- // ul#social -->
+                        </div>
+                        <!-- // .eight -->
+                        
+                        <div class="clear"></div>
+                    </div>
+                    <!-- // .container -->
+                </div>
+                <!-- // #section-footer -->
+                
+                <!-- Javascript files
+                 ================================================== -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                
+                <!--<script src="js/selectnav.min.js"></script>-->
+                <script src="js/bootstrap-scrollspy.js"></script>
+                <script src="js/jquery.easing.min.js"></script>
+                <script src="js/jquery.custom.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <!-- Custom Theme JavaScript -->
+                <script src="js/freelancer.js"></script>
+                <!-- End Document
+                 ================================================== -->
+                </body>
+</html>
